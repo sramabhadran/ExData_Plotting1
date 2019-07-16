@@ -1,6 +1,14 @@
 ## This is plot2.R. The objective of this script is to read in the power consumption data,
 ## produce the line plot showing global active power over time, and store it in a file called plot2.png
 
+## Pull down the Zip file from the URL below
+## https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip
+## and get everything into a text file called household_power_consumption.txt
+
+fileURL <- "https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip"
+
+download.file(fileURL, destfile = "data.zip")
+unzip("data.zip", "household_power_consumption.txt")
 
 
 ## Read in all the data (yes, my computer can handle it)
